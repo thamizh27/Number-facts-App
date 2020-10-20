@@ -2,21 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Facts Application</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/one.jpg" type="image/x-icon">
+
+    <style>
+        .row {
+            height: 100vh;
+        }
+
+        .col-8 {
+            border-radius: 5px;
+        }
+
+        .num {
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+    </style>
+
 </head>
-<body>
+<body class="bg-light">
     
     <div class="container">
-        <h1>Number Facts</h1>
-        <p>Enter a number here and get a random fact</p>
-        <input type="number" id="input" size="100">
-        <div class="card" id="card">
-            <h3>Number Fact</h3>
-            <p id="output"></p>
+        <div class="row justify-content-center align-items-center">
+            <div class=" col-8 col-lg-4 col-xl-4 col-md-6 bg-info">
+                <div class="container">
+                    <h1 class="num mt-3" >Number Facts</h1>
+                </div>
+                <p class="lead">Enter a number here and get a random fact!</p>
+                <div class="form-group">
+                    <input class="form-control" type="number" id="input" size="100">
+                </div>
+                <div class="card mb-4" id="card">
+                    <h3 id="fact-header" class="card-header text-info">Number Fact</h3>
+                    <p class="card-body" id="output"></p>
+                </div>
+            </div>
         </div>
     </div>
 
