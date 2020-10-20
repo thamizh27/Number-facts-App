@@ -1,2 +1,2 @@
-vanilla javascript  number-facts-app
-using bootstrap for styling
+# vanilla javascript  number-facts-app
+# using bootstrap for styling
