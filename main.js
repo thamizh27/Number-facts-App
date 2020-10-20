@@ -1,10 +1,11 @@
 let card = document.getElementById("card");
 let output = document.getElementById("output");
+let factHeader = document.getElementById("fact-header");
 
 let input = document.getElementById("input");
-input.addEventListener("input",tham);
+input.addEventListener("input",fact);
 
-function tham() {
+function fact() {
     let num = input.value;
     
     let xhr = new XMLHttpRequest();
@@ -22,5 +23,8 @@ function tham() {
     if(num === "") {
         card.style.display = "none";
     }
+
+    factHeader.innerHTML = `Number Fact - ${num}`;
+
 } 
 
